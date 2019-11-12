@@ -39,4 +39,18 @@ class Order: ObservableObject {
         return true
     }
     
+    var cost: Double {
+        var cost = Double(quanity) * 2
+        cost += Double(type) / 2
+        
+        if extraFrosting {
+            cost += Double(quanity)
+        }
+        
+        if addSprinkles {
+            cost += Double(quanity) / 2
+        }
+        return cost
+    }
+    
 }
