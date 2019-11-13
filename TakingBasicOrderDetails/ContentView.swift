@@ -22,8 +22,8 @@ struct ContentView: View {
                             }
                         }
                     
-                    Stepper(value: $order.quanity, in: 3...20) {
-                        Text("Number of cakes: \(order.quanity)")
+                    Stepper(value: $order.quantity, in: 3...20) {
+                        Text("Number of cakes: \(order.quantity)")
                     }
                 }
                 
